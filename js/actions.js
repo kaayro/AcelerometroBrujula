@@ -24,4 +24,4 @@ var fn = {
 			brj.stop();
 	}
 };
-$(fn.init);
+$(fn.ready);
