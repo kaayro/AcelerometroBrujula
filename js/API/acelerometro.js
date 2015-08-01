@@ -12,7 +12,7 @@ var acc = {
 	start: function(){
 		if(acc.watchID == null){
 			var options = { frequency: 500 };  // Update every 3 seconds
-			acc.watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+			acc.watchID = navigator.accelerometer.watchAcceleration(acc.onSuccess, acc.onError, options);
 		}
 	},
 	stop: function(){
