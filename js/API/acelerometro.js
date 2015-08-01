@@ -18,6 +18,7 @@ var acc = {
 	stop: function(){
 		if(acc.watchID != null){
 			navigator.accelerometer.clearWatch(acc.watchID);
+			acc.watchID = null;
 			$('#acelerometro .scroll h2').html("Detenido")
 		}
 	}
